@@ -105,6 +105,7 @@ class CountryItem extends HTMLElement {
         .country-data .col {
             flex-direction: row;
             width: 70%;
+            margin-right: 20px;
         }
 
         .country-data .col p {

@@ -1,6 +1,7 @@
-import $ from 'jquery';
+import 'jquery';
 import 'jquery-ui/themes/base/all.css';
 import 'jquery-ui/ui/widgets/autocomplete';
+window.$ = window.jQuery = require('jquery');
 
 class SearchBar extends HTMLElement {
 
@@ -34,7 +35,6 @@ class SearchBar extends HTMLElement {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-radius: 40px;
         display: flex;
-        position: sticky;
         top: 10px;
         background-color: white;
         width: 100%;
@@ -45,8 +45,8 @@ class SearchBar extends HTMLElement {
         padding: 16px 16px 16px 32px;
         border: 0;
         font-size: 18px;
-        border-radius: 40px;
         outline: none;
+        max-width: 100%;
       }
       
       .search-container > input::placeholder {
@@ -58,7 +58,7 @@ class SearchBar extends HTMLElement {
       .search-container > button {
         cursor: pointer;
         padding: 16px;
-        background-color: #6C63FF;
+        background-color: #008b8b;
         color: white;
         border: 0;
         text-transform: uppercase;
@@ -69,7 +69,7 @@ class SearchBar extends HTMLElement {
         justify-content: center;
         align-items: center;
       }
-
+      
       #backButtonElement {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
@@ -81,26 +81,9 @@ class SearchBar extends HTMLElement {
       .search-container > button > i {
         margin-right: 8px;
       }
-      
-      @media screen and (max-width: 550px) {
+      @media screen and (max-width: 400px) {
         .search-container {
-          flex-direction: column;
-          position: static;
-          box-shadow: none;
-          border-radius: 0;
-        }
-      
-        .search-container > input {
-          width: 100%;
-          margin-bottom: 12px;
-          border-top-right-radius: 25px;
-          border-bottom-right-radius: 25px;
-        }
-      
-        .search-container > button {
-          width: 100%;
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 25px;
+          max-width: 100%;
         }
       }
       </style> 
