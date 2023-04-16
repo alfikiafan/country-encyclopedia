@@ -75,7 +75,7 @@ class CountryItem extends HTMLElement {
 
         .country-data {
             width: 100%;
-            margin: 20px auto;
+            margin: 5px auto;
             display: flex;
         }
 
@@ -214,7 +214,7 @@ class CountryItem extends HTMLElement {
                 <p>${this._country.timezones}</p>
             </div>
         </div>
-        <div class="country-data">
+        <div class="country-data" style="margin-bottom: 21px;">
             <div class="row">
                 <p>Other Names</p>
             </div>
