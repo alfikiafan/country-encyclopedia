@@ -33,6 +33,7 @@ class CountryItem extends HTMLElement {
         }
 
         .country-symbol {
+            align-items: center;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -44,14 +45,15 @@ class CountryItem extends HTMLElement {
         }
 
         .country-flag {
-            max-height: 20vw;
+            max-height: 50%;
+            width: auto;
             object-position: center;
             box-shadow: 3.3px 6.6px 6.6px hsl(0deg 0% 0% / 0.40);
 
         }
 
         .country-coat {
-            max-height: 20vw;
+            max-height: 200px;
             object-position: center;
             text-align: center;
         }

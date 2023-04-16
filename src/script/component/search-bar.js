@@ -99,17 +99,24 @@ class SearchBar extends HTMLElement {
       </div>
     `;
 
-    this.shadowDOM.querySelector('#searchElement').addEventListener('keydown', (event) => {
-      if (event.keyCode === 13) {
-        this._clickEvent();
-        window.document.body.style.background = 'none'
-      }
-    });
-
-    this.shadowDOM.querySelector('#searchButtonElement').addEventListener('click', (event) => {
+    const handleSearch = () => {
       this._clickEvent();
       window.document.body.style.background = 'none'
+      const description = document.querySelector('.description');
+      const copyright = document.querySelector('.copyright');
+      description.style.display = 'none';
+      copyright.style.display = 'none';
+    }
+    
+    this.shadowDOM.querySelector('#searchElement').addEventListener('keydown', (event) => {
+      if (event.keyCode === 13) {
+        handleSearch();
+      }
     });
+    
+    this.shadowDOM.querySelector('#searchButtonElement').addEventListener('click', (event) => {
+      handleSearch();
+    });    
 
     this.shadowDOM.querySelector('#backButtonElement').addEventListener('click', (event) => {
         window.location.replace(document.referrer)
