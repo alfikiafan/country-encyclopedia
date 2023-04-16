@@ -26,6 +26,7 @@
   "dependencies": {
     "jquery": "^3.6.4",
     "jquery-ui": "^1.13.2",
+    "jquery-ui-dist": "^1.13.2",
     "loader": "^2.1.1",
     "regenerator-runtime": "^0.13.9"
   }
