@@ -31,4 +31,4 @@ This web application is designed to search for country data in English. Users ca
 
 ## Screenshot
 
-[Web Screenshot](https://github.com/alfikiafan/Country-Encyclopedia/blob/master/img/app_screenshot.png)
+![Web Screenshot](https://github.com/alfikiafan/Country-Encyclopedia/blob/master/img/app_screenshot.png)
