@@ -9,7 +9,8 @@ To contribute, please follow these guidelines:
 To start contributing to the Country Encyclopedia, follow these steps:
 
 1. Fork the repository and clone it to your local machine.
-2. Install the necessary dependencies by running the following command:
+2. Install the necessary dependencies by running the following command:  
+
    ```
    npm install
    ```
