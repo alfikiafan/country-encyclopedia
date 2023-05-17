@@ -1,28 +1,42 @@
 # Country Encyclopedia
 
-This web application is designed to search for country data in English. Users can enter the name of a country in the search bar and the app will return information about that country, such as its official name, capital city, population, region, subregion, time zone, and alternative names. Overall, the app provides a convenient way to quickly access information about countries, making it useful for a wide range of purposes such as research and education
+This web application allows users to search for country data in English. By entering the name of a country in the search bar, the app retrieves information about that country, including its official name, capital city, population, region, subregion, time zone, and alternative names. The app is designed to provide a convenient way to quickly access country information, making it useful for various purposes such as research and education.
 
-## How To Install
+## Installation
 
- 1. **Install app**  
-    Run this command in terminal  
-    `npm install`
+To install the application, follow these steps:
 
- 2. **Build app with webpack configuration**  
-    `npm run build`
+1. **Install Dependencies**  
+   Run the following command in the terminal:  
+   ```
+   npm install
+   ```
 
- 3. **Run app with development mode**
-     `npm run start-dev`
+2. **Build the Application**  
+   Use the following command to build the application using webpack configuration:  
+   ```
+   npm run build
+   ```
 
-## Criteria for this Web Application
+3. **Run the Application in Development Mode**  
+   Start the application in development mode with the following command:  
+   ```
+   npm run start-dev
+   ```
 
-1. Use the standard _ES6_ syntax in writing _JavaScript_ code in the created project.
-2. There is at least one custom element implementation.
-3. Using _Webpack_ as a module bundler (production stage).
-4. Utilizing _Webpack_ as an _environment_ in project development (development stage).
-5. Utilizing the API by using the _AJAX_ concept in displaying dynamic data in the applications that are made.
+## Development Criteria
 
-## Prerequisites to Developing this App
+The web application adheres to the following criteria:
+
+1. _ES6_ Syntax: The JavaScript code in the project follows the standard ES6 syntax.
+2. Custom Element: The application includes at least one custom element implementation.
+3. Webpack: The project uses Webpack as a module bundler for the production stage.
+4. Development Environment: Webpack is utilized as the development environment for the project during the development stage.
+5. AJAX and API Integration: The application employs the AJAX concept to fetch and display dynamic data from the API.
+
+## Prerequisites
+
+Before developing the application, ensure you have the following prerequisites:
 
 1. Node.js
 2. Webpack
@@ -32,3 +46,15 @@ This web application is designed to search for country data in English. Users ca
 ## Screenshot
 
 ![Web Screenshot](https://github.com/alfikiafan/Country-Encyclopedia/blob/master/img/app_screenshot.png)
+
+## Credits
+
+This project was created by Alfiki Diastama Afan Firdaus. 
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Contributions
+
+Contributions to the project are welcome. If you would like to contribute, please follow the guidelines outlined in [CONTRIBUTING.md](https://github.com/alfikiafan/Country-Encyclopedia/blob/master/CONTRIBUTING.md).
